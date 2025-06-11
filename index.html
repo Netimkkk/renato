@@ -54,14 +54,17 @@
 
     .slider {
       width: 300px;
+      height: 400px;
       margin: 0 auto;
       overflow: hidden;
       border-radius: 20px;
+      position: relative;
     }
 
     .slides {
       display: flex;
       transition: transform 0.5s ease-in-out;
+      width: max-content;
     }
 
     .slides img {
@@ -94,30 +97,30 @@
     </div>
 
     <div class="slider">
-<div class="slides" id="slides">
-  <img src="Imagem do WhatsApp de 2025-06-11 à(s) 17.26.03_bb3e9b48.jpg" alt="foto1">
-  <img src="Imagem do WhatsApp de 2025-06-11 à(s) 17.26.04_59bffb8c.jpg" alt="foto2">
-  <img src="Imagem do WhatsApp de 2025-06-11 à(s) 17.26.04_178dda74.jpg" alt="foto3">
-  <img src="Imagem do WhatsApp de 2025-06-11 à(s) 17.26.04_c003697f.jpg" alt="foto4">
-  <img src="Imagem do WhatsApp de 2025-06-11 à(s) 17.26.03_4754cc39.jpg" alt="foto5">
-</div>
-
+      <div class="slides" id="slides">
+        <img src="Imagem do WhatsApp de 2025-06-11 à(s) 17.26.03_bb3e9b48.jpg" alt="foto1">
+        <img src="Imagem do WhatsApp de 2025-06-11 à(s) 17.26.04_59bffb8c.jpg" alt="foto2">
+        <img src="Imagem do WhatsApp de 2025-06-11 à(s) 17.26.04_178dda74.jpg" alt="foto3">
+        <img src="Imagem do WhatsApp de 2025-06-11 à(s) 17.26.04_c003697f.jpg" alt="foto4">
+        <img src="Imagem do WhatsApp de 2025-06-11 à(s) 17.26.03_4754cc39.jpg" alt="foto5">
+      </div>
     </div>
 
     <div class="text-section">
-      <h2>Feliz Dia dos Namorados, amor! 💜</h2>
+      <h2>Cada momento ao seu lado é um presente minha gatinha 💜</h2>
       <div class="contador" id="contador"></div>
       <p style="margin-top: 20px; max-width: 400px; margin-inline: auto;">
-        
+        Feliz Dia dos Namorados, amor!
 
-Hoje celebramos não só o nosso amor, mas 2 anos e 7 meses de uma jornada linda ao seu lado. Cada risada, cada desafio superado e cada momento de carinho só me mostram o quanto somos feitos um para o outro.  
+        Hoje celebramos não só o nosso amor, mas 2 anos e 7 meses de uma jornada linda ao seu lado. Cada risada, cada desafio superado e cada momento de carinho só me mostram o quanto somos feitos um para o outro.  
 
-Você é meu porto seguro, meu parceiro de aventuras e a pessoa que torna meus dias mais leves e especiais. Que essa data seja só mais um capítulo da nossa história, que só tende a ficar melhor!  
+        Você é meu porto seguro, meu parceiro de aventuras e a pessoa que torna meus dias mais leves e especiais. Que essa data seja só mais um capítulo da nossa história, que só tende a ficar melhor!  
 
-Amo você hoje, amanhã e sempre. ❤  
+        Amo você hoje, amanhã e sempre. ❤  
 
-Com todo meu amor,  
-Renato
+        Com todo meu amor,  
+        Renato
+      </p>
     </div>
   </div>
 
@@ -157,6 +160,7 @@ Renato
     let currentSlide = 0;
     const slides = document.getElementById("slides");
     const totalSlides = slides.children.length;
+slides.style.width = `${totalSlides * 300}px`;
 
     setInterval(() => {
       currentSlide = (currentSlide + 1) % totalSlides;
