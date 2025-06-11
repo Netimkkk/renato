@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nosso Amor</title>
   <style>
     body {
@@ -53,9 +53,7 @@
     }
 
     .slider {
-      width: 100%;
-      max-width: 300px;
-      height: 450px;
+      width: 300px;
       margin: 0 auto;
       overflow: hidden;
       border-radius: 20px;
@@ -67,9 +65,9 @@
     }
 
     .slides img {
-      flex: 0 0 100%;
-      height: 100%;
-      object-fit: contain;
+      width: 300px;
+      height: 400px;
+      object-fit: cover;
       border-radius: 20px;
     }
 
@@ -92,33 +90,39 @@
   <div class="hearts"></div>
   <div class="container">
     <div class="spotify">
-      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5XeFesFbtLpXzIVDNQP22n?utm_source=generator" width="300" height="80" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5XeFesFbtLpXzIVDNQP22n?utm_source=generator" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
 
     <div class="slider">
-      <div class="slides" id="slides">
-        <img src="Imagem do WhatsApp de 2025-06-11 à(s) 17.26.03_bb3e9b48.jpg" alt="foto1" />
-        <img src="Imagem do WhatsApp de 2025-06-11 à(s) 17.26.04_59bffb8c.jpg" alt="foto2" />
-        <img src="Imagem do WhatsApp de 2025-06-11 à(s) 17.26.04_178dda74.jpg" alt="foto3" />
-        <img src="Imagem do WhatsApp de 2025-06-11 à(s) 17.26.04_c003697f.jpg" alt="foto4" />
-        <img src="Imagem do WhatsApp de 2025-06-11 à(s) 17.26.03_4754cc39.jpg" alt="foto5" />
-      </div>
+<div class="slides" id="slides">
+  <img src="Imagem do WhatsApp de 2025-06-11 à(s) 17.26.03_bb3e9b48.jpg" alt="foto1">
+  <img src="Imagem do WhatsApp de 2025-06-11 à(s) 17.26.04_59bffb8c.jpg" alt="foto2">
+  <img src="Imagem do WhatsApp de 2025-06-11 à(s) 17.26.04_178dda74.jpg" alt="foto3">
+  <img src="Imagem do WhatsApp de 2025-06-11 à(s) 17.26.04_c003697f.jpg" alt="foto4">
+  <img src="Imagem do WhatsApp de 2025-06-11 à(s) 17.26.03_4754cc39.jpg" alt="foto5">
+</div>
+
     </div>
 
     <div class="text-section">
-      <h2>Cada momento ao seu lado é um presente minha gatinha 💜</h2>
+      <h2>Feliz Dia dos Namorados, amor! 💜</h2>
       <div class="contador" id="contador"></div>
       <p style="margin-top: 20px; max-width: 400px; margin-inline: auto;">
-        Obrigado meu amor, por mostrar a mim que seu amor é incomparável com qualquer coisa desse mundo, agradeço a Deus por estar com a minha princesa por mais um ano, mais um ano de muitos! Obrigado pelas oportunidades meu amor, eu te amo MUITO MUITO MUITO MUITO MUITO MUITO MUITO MUITO meu amor, saiba que enquanto estiver nesse mundo, nunca estará sozinha. NUNCA.
+        
 
-        Eu te amo minha princesa.
-        <hr />
-        Meu amor, quero que saiba que estou aqui para você, para o que der e vier. Eu te amo meu amor.
-      </p>
+Hoje celebramos não só o nosso amor, mas 2 anos e 7 meses de uma jornada linda ao seu lado. Cada risada, cada desafio superado e cada momento de carinho só me mostram o quanto somos feitos um para o outro.  
+
+Você é meu porto seguro, meu parceiro de aventuras e a pessoa que torna meus dias mais leves e especiais. Que essa data seja só mais um capítulo da nossa história, que só tende a ficar melhor!  
+
+Amo você hoje, amanhã e sempre. ❤  
+
+Com todo meu amor,  
+Renato
     </div>
   </div>
 
   <script>
+    // Contador de tempo juntos EXATAMENTE KKKKKKKKK
     const inicio = new Date("2023-10-14T22:00:00");
     const contador = document.getElementById("contador");
 
@@ -154,12 +158,9 @@
     const slides = document.getElementById("slides");
     const totalSlides = slides.children.length;
 
-    // Corrige largura total do contêiner de slides
-    slides.style.width = `${totalSlides * 100}%`;
-
     setInterval(() => {
       currentSlide = (currentSlide + 1) % totalSlides;
-      slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+      slides.style.transform = `translateX(-${currentSlide * 300}px)`;
     }, 4000);
 
     // Corações animados
